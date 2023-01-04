@@ -1,0 +1,255 @@
+/* Css reset */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* css variables */
+:root {
+    --navbar-height: 59px;
+}
+
+/* navegation bar */
+#navbar {
+    position: relative;
+    display: flex;
+    align-items: center;
+
+}
+
+/* logo image */
+#logo {
+    border-radius: 34px;
+    background-color: rgba(0, 0, 0, 0.219);
+    margin: 4px 35px;
+}
+
+#logo img {
+    border-radius: 6px;
+    height: 60px;
+    margin: 5px 35px;
+    cursor: pointer;
+}
+
+
+/* list items */
+#navbar ul {
+    display: flex;
+    font-family: 'Anybody', cursive;
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: .7;
+}
+
+#navbar ul li {
+
+    list-style: none;
+    font-size: 1.5rem;
+}
+
+#navbar ul li a {
+    background-color: rgba(0, 0, 0, 0.219);
+    color: white;
+    display: block;
+    border-radius: 15px;
+    padding: 3px 10px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover {
+    color: black;
+    background-color: white;
+}
+
+/* Home Section */
+
+#home {
+    display: flex;
+    flex-flow: column;
+    padding: 0px 200px;
+    height: 450px;
+    justify-content: center;
+    align-items: center;
+}
+#home p{
+    
+    padding: 20px 0px;
+}
+
+#home::before {
+    content: "";
+    background: url('background.png.png') no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 530px;
+    width: 100%;
+    z-index: -1;
+    opacity: .87;
+}
+
+/* Utility Class */
+
+#home h1 {
+    font-family: 'Anybody', cursive;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+#home p {
+    font-family: 'Anybody', cursive;
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.btn:hover {
+
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+
+}
+
+/* client section */
+#clint-section::before {
+    content: "";
+    /* background: url('background.png.png') no-repeat center center/cover; */
+    background: url('hot-air-balloon-736879_1280');
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 1;
+}
+
+#client {
+    position: relative;
+    /* height: 300px; */
+
+}
+
+#clints {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#client::before {
+    content: "";
+    position: absolute;
+    background: url('key-3087900__340.jpg') no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 1;
+}
+
+
+#client .clint-item img {
+    height: 60px;
+    padding: 0px 18px;
+}
+/* contact Section */
+
+#contact{
+    position: relative;
+}
+
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: .4;
+    background: url('background.png.png') no-repeat center center/cover;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input,
+#contact-box textarea{
+    padding: .5rem;
+    width: 100%;
+    border-radius: 23px;
+}
+#contact-box form{
+    width: 40%;
+}
+#contact-box label{
+    font-family: 'Libre Franklin', sans-serif;
+   font-size: 1.3rem;
+}
+footer{
+    color: white;
+    background-color: black;
+}
+/* Utility Classes */
+
+.h-primary {
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 3.8rem;
+    padding: 12px;
+    text-align: center;
+
+}
+
+.h-secondary {
+    font-family: 'Libre Franklin', sans-serif;
+    text-align: center;
+
+    font-size: 2.3rem;
+    padding: 12px;
+}
+
+.btn {
+    padding: 6px 20px;
+    border: 2px solid brown;
+    border-radius: 5px;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    border-style: inset;
+    cursor: pointer;
+}
+
+/* servies */
+
+#services {
+
+    display: flex;
+    margin: 34px;
+
+}
+#services p{
+    text-align: center;
+}
+#services .box {
+    background-color: rgb(240, 240, 240);
+    border-radius: 28px;
+    border: 2px solid rgb(255, 0, 43);
+    padding: 12px;
+    margin: 12px;
+}
+
+#services .box img {
+    display: block;
+    height: 160px;
+    margin: auto;
+}

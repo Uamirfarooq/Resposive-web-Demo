@@ -1,0 +1,31 @@
+body{
+    background-color: rgb(205, 50, 50);
+}
+#navbar{
+    flex-direction: column;
+}
+#home{
+    padding: 0px 80px;
+
+
+}
+#services{
+
+}
+#services{
+
+}
+client{
+
+}
+.h-primary {
+    font-size: 2.0rem;
+    padding: 5px;
+
+}
+
+.h-secondary {
+
+    font-size: 1.0rem;
+    padding: 5px;
+}
